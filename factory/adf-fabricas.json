@@ -1,0 +1,9 @@
+{
+	"name": "adf-fabricas",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1bbd804d-790f-4073-b23b-7bdac6d18c06",
+		"tenantId": "fabd047c-ff48-492a-8bbb-8f98b9fb9cca"
+	}
+}
