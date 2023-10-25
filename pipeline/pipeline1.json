@@ -51,8 +51,30 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"source": {
+									"type": "AzureSqlSource",
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
+								},
 								"enableStaging": false
-							}
+							},
+							"inputs": [
+								{
+									"referenceName": "AzureSqlTable1",
+									"type": "DatasetReference",
+									"parameters": {
+										"URL_key_vault": "https://kv-almacenes.vault.azure.net/",
+										"schema1": {
+											"value": "@item().schema1",
+											"type": "Expression"
+										},
+										"table": {
+											"value": "@item().table",
+											"type": "Expression"
+										}
+									}
+								}
+							]
 						}
 					]
 				}
@@ -60,16 +82,12 @@
 		],
 		"parameters": {
 			"schema1": {
-				"type": "array",
-				"defaultValue": [
-					"Finance"
-				]
+				"type": "string",
+				"defaultValue": "Finance"
 			},
 			"schema2": {
-				"type": "array",
-				"defaultValue": [
-					"dbo"
-				]
+				"type": "string",
+				"defaultValue": "dbo"
 			}
 		},
 		"variables": {
