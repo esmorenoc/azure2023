@@ -52,7 +52,7 @@
 							"userProperties": [
 								{
 									"name": "source",
-									"value": "@{item().schema1}.@{item().table}"
+									"value": "@{item().schema}.@{item().table}"
 								},
 								{
 									"name": "destination",
@@ -91,8 +91,8 @@
 											"value": "https://kv-almacenes.vault.azure.net/",
 											"type": "Expression"
 										},
-										"schema1": {
-											"value": "@item().schema1",
+										"schema": {
+											"value": "@item().schema",
 											"type": "Expression"
 										},
 										"table": {

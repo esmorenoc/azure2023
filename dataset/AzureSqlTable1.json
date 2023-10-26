@@ -9,7 +9,7 @@
 			"URL_key_vault": {
 				"type": "string"
 			},
-			"schema1": {
+			"schema": {
 				"type": "string"
 			},
 			"table": {
