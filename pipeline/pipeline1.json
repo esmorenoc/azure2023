@@ -128,7 +128,7 @@
 			}
 		],
 		"parameters": {
-			"schema1": {
+			"schema": {
 				"type": "string",
 				"defaultValue": "Finance"
 			},
