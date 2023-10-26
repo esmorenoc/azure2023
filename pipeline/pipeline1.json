@@ -121,11 +121,11 @@
 		"parameters": {
 			"schema": {
 				"type": "string",
-				"defaultValue": "finance"
+				"defaultValue": "dbo"
 			},
 			"schema2": {
 				"type": "string",
-				"defaultValue": "dbo"
+				"defaultValue": "finance"
 			}
 		},
 		"variables": {
