@@ -12,7 +12,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "table",
+					"variableName": "tabla",
 					"value": {
 						"value": "@json('[\n\n\n  {\n      \"schema\": \"dbo\",    \n        \"schema2\": \"finance\",     \n        \"tabla\":\"LogisticsAddressCountryRegionStaging\" ,   \n        \"pk_integracion\": \"COUNTRYREGION\"\n        },\n\n         {\n      \"schema\": \"dbo\",    \n        \"schema2\": \"finance\",     \n        \"tabla\":\"aqs_canton\" ,   \n        \"pk_integracion\": \"Codigo\"\n        },\n\n         {\n      \"schema\": \"dbo\",    \n        \"schema2\": \"finance\",     \n        \"tabla\":\"aqs_cliente\" ,   \n        \"pk_integracion\": \"IdClienteCrm\"\n        },\n\n         {\n      \"schema\": \"dbo\",    \n        \"schema2\": \"finance\",     \n        \"tabla\":\"PaymTermInvoiceStaging\" ,   \n        \"pk_integracion\": \"DATAAREAID\"\n        },\n        \n         {\n      \"schema\": \"dbo\",    \n        \"schema2\": \"finance\",     \n        \"tabla\":\"UFTProjInvoiceJourStaging\" ,   \n        \"pk_integracion\": \"DATAAREAID\"\n        },\n        \n        ]')",
 						"type": "Expression"
@@ -33,7 +33,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@variables('table')",
+						"value": "@variables('tabla')",
 						"type": "Expression"
 					},
 					"isSequential": true,
@@ -95,8 +95,8 @@
 											"value": "@item().schema",
 											"type": "Expression"
 										},
-										"table": {
-											"value": "@item().table",
+										"tabla": {
+											"value": "@item().tabla",
 											"type": "Expression"
 										}
 									}
@@ -115,8 +115,8 @@
 											"value": "@item().schema2",
 											"type": "Expression"
 										},
-										"table": {
-											"value": "@item().table",
+										"tabla": {
+											"value": "@item().tabla",
 											"type": "Expression"
 										}
 									}
@@ -138,7 +138,7 @@
 			}
 		},
 		"variables": {
-			"table": {
+			"tabla": {
 				"type": "Array",
 				"defaultValue": [
 					"LogisticsAddressCountryRegionStaging",
