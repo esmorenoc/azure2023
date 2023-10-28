@@ -38,11 +38,17 @@
 				"typeProperties": {
 					"source": {
 						"type": "ExcelSource",
+						"additionalColumns": [
+							{
+								"name": "columna_prueba",
+								"value": "666"
+							}
+						],
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
 							"modifiedDatetimeStart": "2023-10-28T00:00:00.000Z",
-							"modifiedDatetimeEnd": "2023-10-27T02:00:00.000Z",
+							"modifiedDatetimeEnd": "2023-10-28T02:00:00.000Z",
 							"enablePartitionDiscovery": false
 						}
 					},
@@ -56,6 +62,80 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ufn_sociedadesfoid",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ufn_sociedadesfoid",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ufn_name",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ufn_name",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ufn_clienteid",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ufn_clienteid",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ufn_paisid",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ufn_paisid",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ufn_estadosincronizacionfo",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ufn_estadosincronizacionfo",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ufn_sociedadufinetid",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ufn_sociedadufinetid",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
