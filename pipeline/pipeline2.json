@@ -8,10 +8,6 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "tabla",
-						"type": "DatasetReference"
-					},
 					"timeout": "0.00:01:00",
 					"sleep": 10
 				}
@@ -36,16 +32,6 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "ExcelSource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"modifiedDatetimeStart": "2023-10-28T00:00:00.000Z",
-							"modifiedDatetimeEnd": "2023-10-28T02:00:00.000Z",
-							"enablePartitionDiscovery": false
-						}
-					},
 					"sink": {
 						"type": "AzureSqlSink",
 						"writeBehavior": "insert",
@@ -53,22 +39,8 @@
 						"tableOption": "autoCreate",
 						"disableMetricsCollection": false
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
-					}
+					"enableStaging": false
 				},
-				"inputs": [
-					{
-						"referenceName": "tabla",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "genericdataset",
