@@ -38,12 +38,6 @@
 				"typeProperties": {
 					"source": {
 						"type": "ExcelSource",
-						"additionalColumns": [
-							{
-								"name": "Col_Prueba",
-								"value": "828"
-							}
-						],
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
