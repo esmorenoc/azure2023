@@ -8,6 +8,10 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"dataset": {
+						"referenceName": "tabla",
+						"type": "DatasetReference"
+					},
 					"timeout": "0.00:01:00",
 					"sleep": 10
 				}
