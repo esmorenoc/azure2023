@@ -14,7 +14,7 @@
 				"fileName": "tabla.xlsx",
 				"container": "ejercicio3"
 			},
-			"firstRowAsHeader": false
+			"firstRowAsHeader": true
 		},
 		"schema": [
 			{
