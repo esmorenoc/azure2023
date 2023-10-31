@@ -1,0 +1,66 @@
+{
+	"name": "tabla2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "JOB",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Creacción de JOBS.xlsx",
+				"container": "ejercicio3"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "HABILITADO JOB",
+				"type": "String"
+			},
+			{
+				"name": "NOMBRE JOB",
+				"type": "String"
+			},
+			{
+				"name": "PROPIETARIO",
+				"type": "String"
+			},
+			{
+				"name": "PASOS",
+				"type": "String"
+			},
+			{
+				"name": "NOTIFICACIÓN",
+				"type": "String"
+			},
+			{
+				"name": "HABILITADO PLANIFICACIÓN",
+				"type": "String"
+			},
+			{
+				"name": "PERIODO",
+				"type": "String"
+			},
+			{
+				"name": "DIAS",
+				"type": "String"
+			},
+			{
+				"name": "HORA SERVIDOR",
+				"type": "String"
+			},
+			{
+				"name": "HORA AMERICA CENTRAL\nGMT-6",
+				"type": "String"
+			},
+			{
+				"name": "HORA DE ESPAÑA",
+				"type": "String"
+			}
+		]
+	}
+}
