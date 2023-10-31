@@ -3,10 +3,44 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase01",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"URL_key_vault": {
+					"value": "https://kv-almacenes.vault.azure.net/",
+					"type": "Expression"
+				},
+				"secret_name_key_vault": {
+					"value": "@dataset().secret_name_key_vault",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"schema": {
+				"type": "string"
+			},
+			"URL_key_vault": {
+				"type": "string"
+			},
+			"tabla": {
+				"type": "string"
+			},
+			"secret_name_key_vault": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tabla",
+				"type": "Expression"
+			}
+		}
 	}
 }

@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"URL_key_vault": {
-					"value": "@dataset().URL_key_vault",
+					"value": "https://kv-almacenes.vault.azure.net/",
 					"type": "Expression"
 				},
 				"secret_name_key_vault": {
