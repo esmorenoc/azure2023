@@ -48,8 +48,7 @@
 				"defaultValue": "stalmacens.blob.core.windows.net"
 			},
 			"sourcestore_directory": {
-				"type": "string",
-				"defaultValue": "ejercicio3"
+				"type": "string"
 			},
 			"destinationstore_location": {
 				"type": "string",
