@@ -175,7 +175,40 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"enableLogging": true
+								"dataset": {
+									"referenceName": "datasourcefile",
+									"type": "DatasetReference",
+									"parameters": {
+										"contenedor": {
+											"value": "@pipeline().parameters.sourcestore_location",
+											"type": "Expression"
+										},
+										"directorio": {
+											"value": "@pipeline().parameters.sourcestore_directory",
+											"type": "Expression"
+										},
+										"nombrearchivo": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
+								},
+								"logStorageSettings": {
+									"linkedServiceName": {
+										"referenceName": "AzureBlobStorage1",
+										"type": "LinkedServiceReference"
+									},
+									"path": {
+										"value": "@pipeline().parameters.destinationstore_location",
+										"type": "Expression"
+									}
+								},
+								"enableLogging": true,
+								"storeSettings": {
+									"type": "AzureBlobStorageReadSettings",
+									"recursive": true,
+									"enablePartitionDiscovery": false
+								}
 							}
 						}
 					]
