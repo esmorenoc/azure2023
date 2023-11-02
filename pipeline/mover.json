@@ -59,7 +59,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(item().type,'Binary')",
+						"value": "@equals(item().type,'File')",
 						"type": "Expression"
 					}
 				}
@@ -78,7 +78,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Filter1').output",
+						"value": "@activity('Filter1').output.value",
 						"type": "Expression"
 					},
 					"batchCount": 20,
@@ -197,10 +197,6 @@
 									"linkedServiceName": {
 										"referenceName": "AzureBlobStorage1",
 										"type": "LinkedServiceReference"
-									},
-									"path": {
-										"value": "@pipeline().parameters.destinationstore_location",
-										"type": "Expression"
 									}
 								},
 								"enableLogging": true,
