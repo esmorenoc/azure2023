@@ -24,7 +24,7 @@
 								"type": "Expression"
 							},
 							"directorio": {
-								"value": "Creacción de JOBS_binario.xlsb",
+								"value": "https://stalmacens.blob.core.windows.net/ejercicio3/Creacción de JOBS_binario.xlsb",
 								"type": "Expression"
 							}
 						}
@@ -81,7 +81,7 @@
 						"value": "@activity('filterfiles').output.value",
 						"type": "Expression"
 					},
-					"batchCount": 20,
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "copyfile",
@@ -100,7 +100,8 @@
 									"type": "BinarySource",
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
-										"recursive": true
+										"recursive": true,
+										"deleteFilesAfterCompletion": false
 									},
 									"formatSettings": {
 										"type": "BinaryReadSettings"
@@ -214,20 +215,16 @@
 		],
 		"parameters": {
 			"sourcestore_location": {
-				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net/ejercicio3"
+				"type": "string"
 			},
 			"sourcestore_directory": {
-				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net/ejercicio3"
+				"type": "string"
 			},
 			"destinationstore_location": {
-				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net/ejercicio"
+				"type": "string"
 			},
 			"destinationstore_directory": {
-				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net/ejercicio"
+				"type": "string"
 			}
 		},
 		"annotations": []
