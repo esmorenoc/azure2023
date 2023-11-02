@@ -20,11 +20,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"contenedor": {
-								"value": "https://stalmacens.blob.core.windows.net",
+								"value": "@pipeline().parameters.sourcestore_location",
 								"type": "Expression"
 							},
 							"directorio": {
-								"value": "ejercicio3",
+								"value": "@pipeline().parameters.sourcestore_directory",
 								"type": "Expression"
 							}
 						}
