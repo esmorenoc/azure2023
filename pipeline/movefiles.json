@@ -19,14 +19,8 @@
 						"referenceName": "binario_datasourcefolder",
 						"type": "DatasetReference",
 						"parameters": {
-							"contenedor": {
-								"value": "@pipeline().parameters.sourcestore_location",
-								"type": "Expression"
-							},
-							"directorio": {
-								"value": "@pipeline().parameters.sourcestore_directory",
-								"type": "Expression"
-							}
+							"contenedor": "https://stalmacens.blob.core.windows.net/ejercicio3",
+							"directorio": "https://stalmacens.blob.core.windows.net/ejercicio3"
 						}
 					},
 					"fieldList": [
