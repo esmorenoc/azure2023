@@ -24,7 +24,7 @@
 								"type": "Expression"
 							},
 							"directorio": {
-								"value": "https://stalmacens.blob.core.windows.net/ejercicio3/Creacción de JOBS_binario.xlsb",
+								"value": "Creacción de JOBS_binario.xlsb",
 								"type": "Expression"
 							}
 						}
