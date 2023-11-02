@@ -52,11 +52,10 @@
 			},
 			"destinationstore_location": {
 				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net"
+				"defaultValue": "ejercicio4"
 			},
 			"destinationstore_directory": {
-				"type": "string",
-				"defaultValue": "ejercicio4"
+				"type": "string"
 			}
 		},
 		"annotations": []
