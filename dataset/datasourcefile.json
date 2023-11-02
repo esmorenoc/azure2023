@@ -1,5 +1,5 @@
 {
-	"name": "binario_datasourcefile",
+	"name": "datasourcefile",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",

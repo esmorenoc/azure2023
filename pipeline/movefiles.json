@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "binario_datasourcefolder",
+						"referenceName": "datasourcefolder",
 						"type": "DatasetReference",
 						"parameters": {
 							"contenedor": {
@@ -117,7 +117,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "binario_datasourcefile",
+									"referenceName": "datasourcefile",
 									"type": "DatasetReference",
 									"parameters": {
 										"contenedor": {
@@ -137,7 +137,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "binario_datasourcedestination",
+									"referenceName": "datasourcedestination",
 									"type": "DatasetReference",
 									"parameters": {
 										"contenedor": {
@@ -177,7 +177,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
-									"referenceName": "binario_datasourcefile",
+									"referenceName": "datasourcefile",
 									"type": "DatasetReference",
 									"parameters": {
 										"contenedor": {
@@ -220,7 +220,7 @@
 			},
 			"sourcestore_directory": {
 				"type": "string",
-				"defaultValue": "ejercicio3/Creacción de JOBS_binario.xlsb"
+				"defaultValue": "ejercicio3"
 			},
 			"destinationstore_location": {
 				"type": "string",
