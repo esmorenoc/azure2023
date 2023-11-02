@@ -45,7 +45,7 @@
 		"parameters": {
 			"sourcestore_location": {
 				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net"
+				"defaultValue": "stalmacens.blob.core.windows.net"
 			},
 			"sourcestore_directory": {
 				"type": "string",
