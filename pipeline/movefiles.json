@@ -20,10 +20,13 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"contenedor": {
-								"value": "https://stalmacens.blob.core.windows.net",
+								"value": "https://stalmacens.blob.core.windows.net/ejercicio3",
 								"type": "Expression"
 							},
-							"directorio": "ejercicio3/Creacción de JOBS_binario.xlsb"
+							"directorio": {
+								"value": "Creacción de JOBS_binario.xlsb",
+								"type": "Expression"
+							}
 						}
 					},
 					"fieldList": [
