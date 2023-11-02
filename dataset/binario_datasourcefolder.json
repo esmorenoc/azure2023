@@ -18,10 +18,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "Creacción de JOBS_binario.xlsb",
-					"type": "Expression"
-				},
 				"folderPath": {
 					"value": "@{dataset().directorio}",
 					"type": "Expression"
