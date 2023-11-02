@@ -216,11 +216,11 @@
 		"parameters": {
 			"sourcestore_location": {
 				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net"
+				"defaultValue": "https://stalmacens.blob.core.windows.net/ejercicio3"
 			},
 			"sourcestore_directory": {
 				"type": "string",
-				"defaultValue": "ejercicio3"
+				"defaultValue": "https://stalmacens.blob.core.windows.net/ejercicio3/Creacción de JOBS_binario.xlsb"
 			},
 			"destinationstore_location": {
 				"type": "string",
