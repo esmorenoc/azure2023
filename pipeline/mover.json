@@ -59,7 +59,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(item().type,'*.xlsb')",
+						"value": "@endswith(item().name,'.xlsb')",
 						"type": "Expression"
 					}
 				}
