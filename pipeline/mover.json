@@ -44,16 +44,20 @@
 		],
 		"parameters": {
 			"sourcestore_location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "ejercicio3"
 			},
 			"sourcestore_directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Directory"
 			},
 			"destinationstore_location": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "ejercicio4"
 			},
 			"destinationstore_directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Directory"
 			}
 		},
 		"annotations": []
