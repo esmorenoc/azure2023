@@ -45,19 +45,19 @@
 		"parameters": {
 			"sourcestore_location": {
 				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net/ejercicio3"
+				"defaultValue": "https://stalmacens.blob.core.windows.net"
 			},
 			"sourcestore_directory": {
 				"type": "string",
-				"defaultValue": "Directory"
+				"defaultValue": "ejercicio3"
 			},
 			"destinationstore_location": {
 				"type": "string",
-				"defaultValue": "https://stalmacens.blob.core.windows.net/ejercicio4"
+				"defaultValue": "https://stalmacens.blob.core.windows.net"
 			},
 			"destinationstore_directory": {
 				"type": "string",
-				"defaultValue": "Directory"
+				"defaultValue": "ejercicio4"
 			}
 		},
 		"annotations": []
