@@ -220,7 +220,7 @@
 			},
 			"sourcestore_directory": {
 				"type": "string",
-				"defaultValue": "ejercicio3"
+				"defaultValue": "'ejercicio3'"
 			},
 			"destinationstore_location": {
 				"type": "string",
