@@ -45,11 +45,11 @@
 		"parameters": {
 			"sourcestore_location": {
 				"type": "string",
-				"defaultValue": "stalmacens.blob.core.windows.net"
+				"defaultValue": "ejercicio3"
 			},
 			"sourcestore_directory": {
 				"type": "string",
-				"defaultValue": "ejercicio3"
+				"defaultValue": "https://stalmacens.blob.core.windows.net"
 			},
 			"destinationstore_location": {
 				"type": "string",
