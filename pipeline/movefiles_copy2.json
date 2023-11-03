@@ -60,7 +60,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(item().content,'octet-stream')\n",
+						"value": "@equals(item().type,'octet-stream')\n",
 						"type": "Expression"
 					}
 				}
