@@ -60,7 +60,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(item().type,'bin')",
+						"value": "@equals(item().type,'Bynary')",
 						"type": "Expression"
 					}
 				}
