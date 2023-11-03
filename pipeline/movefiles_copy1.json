@@ -60,7 +60,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@equals(item().format,'binaryfile')",
+						"value": "@equals(item().type,'binaryfile')",
 						"type": "Expression"
 					}
 				}
